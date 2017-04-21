@@ -25,7 +25,12 @@ public class HangManTest {
 		));
 	}
 
-
+	@Test
+	public void guessedLetter_EmptyAtFirst() {
+		HangMan testWord = new HangMan();
+		assertEquals("", testWord.guessedLetter(
+		));
+	}
 
 	// @Test
 	// public void CheckLetter_CheckIfGuess_badGuess() {
