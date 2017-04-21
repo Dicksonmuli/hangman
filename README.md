@@ -28,6 +28,6 @@ Dickson Muli
 
 ### Links:
 
- * [Github repo](https://github.com/Dicksonmuli/hangman) to clone it
+ * [Github repo](https://github.com/Dicksonmuli/hangman.git) to clone it
  * [Install Java](http://codemirror.net/) for the awesome syntax-highlighted editor
  * [Install gradle](http://softwaremaniacs.org/soft/highlight/en/) for syntax highlighting in output code blocks
