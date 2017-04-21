@@ -31,19 +31,26 @@ public class HangManTest {
 		assertEquals("", testWord.guessedLetter(
 		));
 	}
-
+// test for levev 1
 	@Test
 	public void getLevel_1() {
 		HangMan testWord = new HangMan();
 		boolean intDifficult=false;
 		assertEquals(intDifficult, testWord.getLevel() == 1);
 	}
-
+// test for levev 2
 	@Test
 	public void getLevel_2() {
 		HangMan testWord = new HangMan();
 		boolean expected=false;
 		assertEquals(expected, testWord.getLevel() == 2);
+	}
+// test for levev 3
+	@Test
+	public void getLevel_3() {
+		HangMan testWord = new HangMan();
+		boolean expected=false;
+		assertEquals(expected, testWord.getLevel() == 3);
 	}
 
 	// @Test
