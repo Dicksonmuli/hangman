@@ -35,8 +35,15 @@ public class HangManTest {
 	@Test
 	public void getLevel_1() {
 		HangMan testWord = new HangMan();
-		int intDifficulty=1;
-		assertEquals(intDifficulty, testWord.getLevel());
+		boolean intDifficult=false;
+		assertEquals(intDifficult, testWord.getLevel() == 1);
+	}
+
+	@Test
+	public void getLevel_2() {
+		HangMan testWord = new HangMan();
+		boolean expected=false;
+		assertEquals(expected, testWord.getLevel() == 2);
 	}
 
 	// @Test
