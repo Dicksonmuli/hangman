@@ -12,4 +12,10 @@ public class HangManTest {
 		HangMan testWord = new HangMan();
 		assertEquals(true, testWord.checkWord("cabbage"));
 	}
+
+	@Test
+	public void CheckLetter_CheckIfGuess_badGuess() {
+		HangMan testGuess = new HangMan();
+		assertEquals(false, testGuess.checkGuess('a'));
+	}
 }
