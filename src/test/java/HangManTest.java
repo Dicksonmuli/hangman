@@ -5,13 +5,27 @@ import static org.junit.Assert.*;
 
 // class declaration
 public class HangManTest {
-	// the first test to test first behaviour
+	// the first to run before the test
+	@Before
+   public void before() {
+      System.out.println("This is a game");
+   }
+
 	// checking if it takes a word
 	@Test
 	public void checkWord_checkIfWord_true() {
 		HangMan testWord = new HangMan();
 		assertEquals(true, testWord.checkWord("cabbage"));
 	}
+
+	@Test
+	public void numberOfFaults_theNumberOfFaults_0() {
+		HangMan testWord = new HangMan();
+		assertEquals(0, testWord.numberOfFaults(
+		));
+	}
+
+
 
 	// @Test
 	// public void CheckLetter_CheckIfGuess_badGuess() {

@@ -21,10 +21,20 @@ Scanner letterProvided = new Scanner(System.in);
 
 { " specification", " structure", " lexical", " likewise", " management", " manipulate", " mathematics", " hotjava", " vertex", " unsigned", " traditional"
 }};
-
+private String guessedLetters;
+private int numberOfFaults;
+// contructor
+public HangMan() {
+	this.guessedLetters = "";
+	this.numberOfFaults = 0;
+}
 
 	public boolean checkWord(String word){
 		return true;
+	}
+
+	public int numberOfFaults() {
+		return this.numberOfFaults;
 	}
 
 	public int game(){
