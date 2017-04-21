@@ -32,6 +32,22 @@ public class HangManTest {
 		));
 	}
 
+	@Test
+	public void getLevel_1() {
+		HangMan testWord = new HangMan();
+		int intDifficulty=1;
+		assertEquals(intDifficulty, testWord.getLevel());
+	}
+
+	// @Test
+	// public void rightGuessHasNoEffectOnFaults() {
+	// 	char s = "0";
+	// 	HangMan testWord = new HangMan();
+	// 	testWord.guessedLetter(s);
+	// 	assertEquals("", testWord.numberOfFaults() == 0
+	// 	));
+	// }
+
 	// @Test
 	// public void CheckLetter_CheckIfGuess_badGuess() {
 	// 	HangMan testGuess = new HangMan();

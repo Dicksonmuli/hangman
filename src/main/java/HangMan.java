@@ -28,18 +28,22 @@ public HangMan() {
 	this.guessedLetter = "";
 	this.numberOfFaults = 0;
 }
-
+//check there is a word
 	public boolean checkWord(String word){
 		return true;
 	}
-
+//number of faults equals zero at the beginning
 	public int numberOfFaults() {
 		return this.numberOfFaults;
 	}
-
+// no letter guessed before the game starts
 	public String guessedLetter() {
 		return this.guessedLetter;
 	}
+// maximun faults before loosing the game
+public int loosingFaultAmout(){
+	return 10;
+}
 
 	public int game(){
 
